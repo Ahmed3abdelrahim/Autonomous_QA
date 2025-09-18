@@ -1,0 +1,1 @@
+python3 train.py config/train_autonet_char.py

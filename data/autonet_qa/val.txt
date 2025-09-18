@@ -1,0 +1,20 @@
+Q: How do autonomous networks benefit manufacturing?
+A: Factories need ultra-reliable, low-latency links for robots and IoT. Autonomous networks self-optimize in real time to avoid downtime, increasing productivity and efficiency.
+
+Q: How do autonomous networks support mining and industrial operations?
+A: Remote sites need safe, reliable communication for vehicles, drones, and monitoring. Autonomous networks self-heal disruptions, improving safety and productivity.
+
+Q: How do autonomous networks support gaming experiences?
+A: Online games require ultra-low latency. Autonomous networks anticipate spikes and allocate bandwidth, reducing lag and improving gameplay for users.
+
+Q: How do autonomous networks benefit tourism and events?
+A: At concerts or festivals, demand spikes suddenly. Autonomous networks detect surges and allocate resources instantly, letting visitors share, stream, and navigate without service drops.
+
+Q: How does intent make networks more user-friendly for businesses?
+A: Instead of dealing with technical jargon, businesses describe needs in plain terms such as 'ensure secure video conferencing for 500 employees.' The network interprets and fulfills this intent automatically.
+
+Q: How do autonomous networks enhance energy efficiency in data centers?
+A: They dynamically adjust resources to reduce energy use while keeping performance high. This saves money for operators and lowers environmental impact.
+
+Q: Will autonomous networks make travel easier?
+A: Yes. They keep buses, trains, and even self-driving cars connected, making journeys safer and more efficient for passengers.

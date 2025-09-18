@@ -1,0 +1,33 @@
+{
+  "perplexity_val_txt": 16.275777968549576,
+  "n_items": 25,
+  "F1_avg": 0.06383425915483971,
+  "EM": 0.0,
+  "KW_Hit_avg": 0.03787878787878787,
+  "latency_p50_s": 0.3839573860168457,
+  "latency_p95_s": 0.4634053707122803,
+  "ans_length_words_avg": null,
+  "format_pass_rate": null,
+  "refusal_expected_total": 3,
+  "refusal_correct": 0,
+  "refusal_accuracy": 0.0,
+  "hallucination_count": 3,
+  "hallucination_rate_on_should_refuse": 1.0,
+  "notes": {
+    "decoding": {
+      "temperature": 0.2,
+      "top_k": null,
+      "max_new_tokens": 220
+    },
+    "block_size": 256,
+    "metric_toggles": {
+      "perplexity": true,
+      "f1_em": true,
+      "keyword": true,
+      "refusal": true,
+      "latency": true,
+      "length": false,
+      "format": false
+    }
+  }
+}
