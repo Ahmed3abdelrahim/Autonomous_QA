@@ -48,21 +48,30 @@ $ pip install -r requirements.txt
 $ python data/autonet_qa/prepare.py
 ```
 
----
+
+## Data Preparation
+
+> I train on a Q&A corpus distilled from the TM Forum *Autonomous Networks* white paper. The pipeline stays simple (char-level) and reproducible, with checks to **prevent evaluation leakage**.
+
+### 1) Convert source PDF(s) to Q&A dataset
+If starting from the original PDF, extracted Question and anwser via PDF.
+
+### 2) Convert Jsonl file to train and val files and convert them to binary files
+
+```bash
+# prepare jsonl dataset file
+$ python prepare.py
+
+# convert it to binary files
+$ python prepare_char_bin.py
+```
+
 
 ## Training
+
+
 ```bash
-python train.py \
-  out_dir=out-autonet-char \
-  dataset=autonet_char \
-  data_dir=data/autonet_qa \
-  gradient_accumulation_steps=1 \
-  batch_size=64 block_size=256 \
-  n_layer=4 n_head=4 n_embd=256 \
-  dropout=0.1 bias=False \
-  learning_rate=3e-3 max_iters=5000 \
-  weight_decay=1e-1 beta2=0.99 warmup_iters=100 \
-  compile=False init_from=scratch device=cuda
+python3 train.py config/train_autonet_char.py
 ```
 
 > Checkpoints will be saved to `out-autonet-char/ckpt.pt`.
@@ -71,7 +80,7 @@ python train.py \
 
 ## Evaluation
 ```bash
-python evaluate.py --eval_file eval.jsonl --model_dir out-autonet-char
+python evaluate.py 
 ```
 Outputs:
 - Perplexity on validation text
@@ -93,12 +102,9 @@ $ bash test.sh
 ---
 
 ## Deployment
-See `Deployment_AWS.md` for:
-- AWS ECS + ECR strategy
-- SageMaker architecture (with draw.io + Mermaid)
-- CI/CD and GPU scaling suggestions
 
----
+![In Draw IO Diagram](.\resources\drawio.png)
+![In Mermaid Diagram](.\resources\mermaid.png)
 
 ## License
 This project is for assessment and demonstration purposes only. All rights reserved.
@@ -108,4 +114,4 @@ This project is for assessment and demonstration purposes only. All rights reser
 ## Author
 Ahmed Abdelrahim
 - [GitHub](https://github.com/Ahmed3abdelrahim)
-- [LinkedIn](https://www.linkedin.com/in/ahmed3abdelrahim/)
+- [LinkedIn](https://www.linkedin.com/in/ahmed-abdelrahim-elsayed-5a9673175/)
