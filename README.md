@@ -18,7 +18,9 @@ Autonomous_QA/
 ├── configurator.py          # Training configuration loader
 ├── model.py                 # GPT model and configuration
 ├── data/
-│   └── autonet_qa/          # Prepared tokenized dataset (bin/txt)
+│   └── autonet_qa/         # Prepared tokenized dataset (bin/txt)
+|        ├── prepare.py               #convert file to train and val
+│        └── prepare_char_bin.py     #convert file to bin files
 ├── out-autonet-char/        # Output directory with model checkpoints
 ├── server/
 │   ├── app.py               # FastAPI entrypoint
